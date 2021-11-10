@@ -1,0 +1,498 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.22f1 (e1a7f79fd887) revision 14788599'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19042.928; Version 2009; 64bit' Language: 'sv' Physical Memory: 16064 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/liam.svenssongarcia/Documents/GitHub/Schizomania/Schizomania
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56911
+Successfully changed project path to: C:/Users/liam.svenssongarcia/Documents/GitHub/Schizomania/Schizomania
+C:/Users/liam.svenssongarcia/Documents/GitHub/Schizomania/Schizomania
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 143.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/liam.svenssongarcia/Documents/GitHub/Schizomania/Schizomania/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   
+    VRAM:     8032 MB
+    Driver:   27.20.100.9030
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003208 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 146.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.672 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2673ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (1226ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (373ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (527ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (147ms)
+				BeforeProcessingInitializeOnLoad (34ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (108ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.014526 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 120.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.856 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2858ms)
+		BeginReloadAssembly (359ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (2338ms)
+			LoadAssemblies (211ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (725ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (124ms)
+			SetupLoadedEditorAssemblies (942ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (120ms)
+				BeforeProcessingInitializeOnLoad (211ms)
+				ProcessInitializeOnLoadAttributes (550ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2279 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.2 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2714.
+Total: 25.518700 ms (FindLiveObjects: 0.310800 ms CreateObjectMapping: 0.134000 ms MarkObjects: 24.785500 ms  DeleteObjects: 0.284900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultSlidingModule.prefab
+  artifactKey: Guid(cdf64a3e60e072246b68b318588201f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultSlidingModule.prefab using Guid(cdf64a3e60e072246b68b318588201f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '345ab3a138c746fac3d92be5fe419bc7') in 0.140708 seconds 
+  Import took 0.148501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000918 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicWallJumpModule 1.prefab
+  artifactKey: Guid(3db6b650aacfae54a8d7cbd2fa4f10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicWallJumpModule 1.prefab using Guid(3db6b650aacfae54a8d7cbd2fa4f10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdaef482d347afd436e0c577d8a2c79') in 0.034376 seconds 
+  Import took 0.045799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001288 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicNetModule.prefab
+  artifactKey: Guid(eb7dea1fafd118f47ae401ce63b16ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicNetModule.prefab using Guid(eb7dea1fafd118f47ae401ce63b16ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5358f0fbd56044d4d90b5a128de976c5') in 0.029874 seconds 
+  Import took 0.042948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultEdgeJumpModule.prefab
+  artifactKey: Guid(0d3024013c3055c4b9fd11f37c1eb532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultEdgeJumpModule.prefab using Guid(0d3024013c3055c4b9fd11f37c1eb532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5195875dd80e6a04f9e0b4e0d30a8457') in 0.030547 seconds 
+  Import took 0.041213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000577 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultEdgeClimbModule.prefab
+  artifactKey: Guid(6232f98e295a8ed4288b4152982452a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultEdgeClimbModule.prefab using Guid(6232f98e295a8ed4288b4152982452a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47eb21b595afbc78c7aacea4b1f81a13') in 0.034698 seconds 
+  Import took 0.047765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001034 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCWallJumpModule.prefab
+  artifactKey: Guid(3ae041c96b15e584e82ca9f9c931ffb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCWallJumpModule.prefab using Guid(3ae041c96b15e584e82ca9f9c931ffb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faeb9c16f84364a908d044b87cb62acf') in 0.034906 seconds 
+  Import took 0.050516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000757 seconds.
+  path: Assets/CharacterEditorPackage
+  artifactKey: Guid(ba67c3fb846280641a0fd493cec7d12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage using Guid(ba67c3fb846280641a0fd493cec7d12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e075d662ce2b2175b04bdcd99674a74e') in 0.024743 seconds 
+  Import took 0.038141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000636 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/CharacterControllers/HeroCubeCharacter.prefab
+  artifactKey: Guid(32e471deaa16faf4f893a65df3633237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/CharacterControllers/HeroCubeCharacter.prefab using Guid(32e471deaa16faf4f893a65df3633237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45930a022fdb929d5eb1eb1778a490b') in 1.821901 seconds 
+  Import took 1.835635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallClimbModule.prefab
+  artifactKey: Guid(a7447b2b747ccc641bc5e354cd7f5186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallClimbModule.prefab using Guid(a7447b2b747ccc641bc5e354cd7f5186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '872ee435e1723c3449fa2f9eb159d52f') in 0.032561 seconds 
+  Import took 0.045865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCWallStickModule.prefab
+  artifactKey: Guid(68c8afd11120a234eb28e58cce8be8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCWallStickModule.prefab using Guid(68c8afd11120a234eb28e58cce8be8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d35f197eddc851d074b0e74c993bc6e') in 0.029037 seconds 
+  Import took 0.043881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCNetModule.prefab
+  artifactKey: Guid(c36ae67e7c734e04891d9809cdee0090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCNetModule.prefab using Guid(c36ae67e7c734e04891d9809cdee0090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '551d0255d2b0dae3fc470cacebada4b8') in 0.031144 seconds 
+  Import took 0.042728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000996 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/Water.prefab
+  artifactKey: Guid(cc53c125eda66d148b93433043b46930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/Water.prefab using Guid(cc53c125eda66d148b93433043b46930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1a952cd5d957cbf0b1d7b84809498f') in 0.476264 seconds 
+  Import took 0.492563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000753 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/SwayingBlock.prefab
+  artifactKey: Guid(183257cd94380c247ae644a4e24c722d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/SwayingBlock.prefab using Guid(183257cd94380c247ae644a4e24c722d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91eff0ef6f11567469f3b03579b4ebd6') in 0.057498 seconds 
+  Import took 0.071093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000695 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicLadderModule.prefab
+  artifactKey: Guid(f9af53d59b606ba42a30d090bab01c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicLadderModule.prefab using Guid(f9af53d59b606ba42a30d090bab01c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd52c83e87535ca76b3be238cc489040f') in 0.034291 seconds 
+  Import took 0.048433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000624 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c845828cede3f25819031102be01e1') in 0.125372 seconds 
+  Import took 0.136608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/OneWayPlatform.prefab
+  artifactKey: Guid(2749a589064414c4c9e9a08eba604aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/OneWayPlatform.prefab using Guid(2749a589064414c4c9e9a08eba604aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ad3bfaa19fb2e839d26ed7bb060abd') in 0.047777 seconds 
+  Import took 0.057973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000850 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultCrouchingModule.prefab
+  artifactKey: Guid(db4d5e4798d735c4390b77f17b4ecafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultCrouchingModule.prefab using Guid(db4d5e4798d735c4390b77f17b4ecafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc2dfd98b37836ca605c9a6ab13911b') in 0.033261 seconds 
+  Import took 0.046873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000635 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallJumpModule.prefab
+  artifactKey: Guid(8b0421b8281958946b42c97103c01ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallJumpModule.prefab using Guid(8b0421b8281958946b42c97103c01ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d75a873015eeab454da48f189571538') in 0.033061 seconds 
+  Import took 0.042887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001015 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/Zipline.prefab
+  artifactKey: Guid(f640a98d661c97d4ab3cdee0172fd941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/Zipline.prefab using Guid(f640a98d661c97d4ab3cdee0172fd941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b619c25d579b86ba9957c18037ef5009') in 0.064032 seconds 
+  Import took 0.073215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/CurvedSkateline.prefab
+  artifactKey: Guid(51ccc0f4db610de4f8c226d167deb439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/CurvedSkateline.prefab using Guid(51ccc0f4db610de4f8c226d167deb439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dbbd7fd4e54efff145c56a2d7f3b43f') in 0.053188 seconds 
+  Import took 0.064615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000468 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultDashModule.prefab
+  artifactKey: Guid(4d2803a0091035c4ebc767b60f7db0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultDashModule.prefab using Guid(4d2803a0091035c4ebc767b60f7db0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b1d090ebccbb6c66af506195d3a910') in 0.022722 seconds 
+  Import took 0.031497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallRunModule.prefab
+  artifactKey: Guid(492c0fea12f6d1c4ebe95fc629bea566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallRunModule.prefab using Guid(492c0fea12f6d1c4ebe95fc629bea566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0062b3394cd24fba2eb7f9e25085dd82') in 0.019423 seconds 
+  Import took 0.027970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCWallSlidingModule.prefab
+  artifactKey: Guid(68b1e474e027da241b2cda440caec3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCWallSlidingModule.prefab using Guid(68b1e474e027da241b2cda440caec3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207556e0cf8907122b9bf5f6d9b10c9d') in 0.019757 seconds 
+  Import took 0.029422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000541 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/PathFollower.prefab
+  artifactKey: Guid(da36be208260e1547a74fc3666a209e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/PathFollower.prefab using Guid(da36be208260e1547a74fc3666a209e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbf12039a0b3d972a9f73634b8e4550') in 0.057154 seconds 
+  Import took 0.071866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000575 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicWallSlidingModule 1.prefab
+  artifactKey: Guid(6bd98b0b7298ce74aa1af40ca825c215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicWallSlidingModule 1.prefab using Guid(6bd98b0b7298ce74aa1af40ca825c215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4e5e40b6614764f5079eb3777d44a1') in 0.028247 seconds 
+  Import took 0.039218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000871 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicSwimModule.prefab
+  artifactKey: Guid(60aef934d1adef64685f6dce80a8e0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicSwimModule.prefab using Guid(60aef934d1adef64685f6dce80a8e0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8ed538dc97baf89aa9791534eea094') in 0.039482 seconds 
+  Import took 0.052615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000979 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicDropDownModule.prefab
+  artifactKey: Guid(ed933e4448b161049bd7a955417172f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicDropDownModule.prefab using Guid(ed933e4448b161049bd7a955417172f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c16a5f310ee0eb896844d327c6bd10') in 0.033546 seconds 
+  Import took 0.048693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000592 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/Ladder.prefab
+  artifactKey: Guid(48fc2704841a474468e2eb61f490df06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/Ladder.prefab using Guid(48fc2704841a474468e2eb61f490df06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7d5c10ad53b59a01ae240fe8f406e7') in 0.046604 seconds 
+  Import took 0.059435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab
+  artifactKey: Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab using Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd094d74455b6e3ebbdb90683f10d20') in 0.049136 seconds 
+  Import took 0.057631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000534 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultLedgeHangModule.prefab
+  artifactKey: Guid(ac1a38f10c8572b4c88f538c0a907208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultLedgeHangModule.prefab using Guid(ac1a38f10c8572b4c88f538c0a907208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a993d19c005235ca639ce7f1757b0f26') in 0.020132 seconds 
+  Import took 0.031400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000708 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/Net.prefab
+  artifactKey: Guid(90316e6151d649d4ab2fec016d5426ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/Net.prefab using Guid(90316e6151d649d4ab2fec016d5426ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efa55708c1b66799735f2cc7c04adf9') in 0.059728 seconds 
+  Import took 0.073596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultZiplineModule.prefab
+  artifactKey: Guid(f2d9c165b8886ee4ab9006d90dba9843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultZiplineModule.prefab using Guid(f2d9c165b8886ee4ab9006d90dba9843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c99ab014ae9760d634986c5220b235') in 0.023153 seconds 
+  Import took 0.031796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/Fingers.prefab
+  artifactKey: Guid(c7c051f6ea9dac84d9642fff173ee31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/Fingers.prefab using Guid(c7c051f6ea9dac84d9642fff173ee31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34634db899579ca105cee33d0f6b9289') in 0.038803 seconds 
+  Import took 0.048582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/SpawnPointSetter.prefab
+  artifactKey: Guid(aeb4bc3f575504e4581f420688f00958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/SpawnPointSetter.prefab using Guid(aeb4bc3f575504e4581f420688f00958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4320c2a5bb1aa66e964642522bceed43') in 0.064878 seconds 
+  Import took 0.072539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultDoubleJumpModule.prefab
+  artifactKey: Guid(7c41d2e39e2d2cb45b11d66bcd95d162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultDoubleJumpModule.prefab using Guid(7c41d2e39e2d2cb45b11d66bcd95d162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6287cc0cfb52e4b8910cfe0cee1008c') in 0.020020 seconds 
+  Import took 0.028671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/Skateline.prefab
+  artifactKey: Guid(00d5cfe58e4e0d442a749659cda01030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/Skateline.prefab using Guid(00d5cfe58e4e0d442a749659cda01030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a504532dcc1d0fd4222664514386264') in 0.033541 seconds 
+  Import took 0.042551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000542 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/CharacterControllers/ClassicCharacter.prefab
+  artifactKey: Guid(006d181c7f39aa7469a46c0b4f98d4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/CharacterControllers/ClassicCharacter.prefab using Guid(006d181c7f39aa7469a46c0b4f98d4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a8a1bb9358d56471ac70573693445a3') in 0.091519 seconds 
+  Import took 0.103722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCDropDownModule.prefab
+  artifactKey: Guid(b0bc480ca5f01e9459cd9b27e7e82cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCDropDownModule.prefab using Guid(b0bc480ca5f01e9459cd9b27e7e82cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce9ad7f5b0768bbb1b3e5672b612c0f') in 0.019842 seconds 
+  Import took 0.027846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000541 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/CharacterControllers/DefaultCharacter.prefab
+  artifactKey: Guid(f6ad21bb9b40ea348abcb11e8f401c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/CharacterControllers/DefaultCharacter.prefab using Guid(f6ad21bb9b40ea348abcb11e8f401c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda11d587237e71ba40c815905f35dc4') in 0.152107 seconds 
+  Import took 0.165079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000688 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallSlidingModule.prefab
+  artifactKey: Guid(d567f2935f125254e8b329cf6a325a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallSlidingModule.prefab using Guid(d567f2935f125254e8b329cf6a325a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea9556d04c14684db8a25b4a6eb10bb') in 0.020471 seconds 
+  Import took 0.033125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000916 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCJetpackModule.prefab
+  artifactKey: Guid(eee5ddaa23696c446a48847eafad35a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCJetpackModule.prefab using Guid(eee5ddaa23696c446a48847eafad35a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d893eb834da8a35c620a194159c4a4e') in 0.033540 seconds 
+  Import took 0.051517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000919 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/MovingTuningFork.prefab
+  artifactKey: Guid(97fd6cd84ac75ab4692765641b30e947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/MovingTuningFork.prefab using Guid(97fd6cd84ac75ab4692765641b30e947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698988eaff24d7cb95f95fbde4906905') in 0.041478 seconds 
+  Import took 0.059017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000800 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/WorldTurnPoint.prefab
+  artifactKey: Guid(5b91ba92a14b88b418f41ae0c3c97066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/WorldTurnPoint.prefab using Guid(5b91ba92a14b88b418f41ae0c3c97066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622a6457b896b759ff2d90a1220ead54') in 0.036616 seconds 
+  Import took 0.050524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000864 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/LevelObjects/CurvedZipline.prefab
+  artifactKey: Guid(0938025e598023e4fbe973af54078ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/LevelObjects/CurvedZipline.prefab using Guid(0938025e598023e4fbe973af54078ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617e1916a72c4cb6e6ce71351158963e') in 0.045037 seconds 
+  Import took 0.055737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicSprintModule 1.prefab
+  artifactKey: Guid(34c10f2ae0e217c4fa17ba2fa4c65588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicSprintModule 1.prefab using Guid(34c10f2ae0e217c4fa17ba2fa4c65588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9f1477783f9eac9f9220954c16f9db') in 0.036080 seconds 
+  Import took 0.044872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultSprintModule.prefab
+  artifactKey: Guid(55af2d208816dbd48b93f3136ef55800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultSprintModule.prefab using Guid(55af2d208816dbd48b93f3136ef55800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5da547ca6038c03f48a92f238ca675') in 0.038693 seconds 
+  Import took 0.053318 seconds .
+
