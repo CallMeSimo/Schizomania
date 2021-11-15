@@ -25,6 +25,7 @@ public class PlayerInput : MonoBehaviour
         }
         bool moveFound = false;
         bool jumpFound = false;
+        bool push = false;
         
         for (int i = 0; i < m_Inputs.Length; i ++)
         {
@@ -68,6 +69,23 @@ public class PlayerInput : MonoBehaviour
 
             m_Inputs = newInputs;
         }
+
+    }
+
+    bool InteractionDetection()
+    {
+        // Cast a ray straight down.
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 15f) ;
+        Debug.DrawRay(transform.position, -Vector2.up, Color.green, 55f);
+
+        // If it hits something...
+        if (hit.collider != null)
+        {
+            Debug.Log("hhellli");
+            return true;
+        }
+
+        return false;
     }
 
     void Awake()
@@ -151,7 +169,9 @@ public class PlayerInput : MonoBehaviour
         {
             m_Inputs[i].Update();
         }
-	}
+        InteractionDetection();
+
+    }
 
     void FixedUpdate()
     {
