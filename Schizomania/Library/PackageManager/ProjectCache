@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637722280018965146
-    m_Hash: 3311433449
+      ticks: 637725643394588269
+    m_Hash: 1759787444
   m_LockFileStatus:
     m_FilePath: C:/Users/wassim.elhaddaoui/Documents/GitHub/Schizomania/Schizomania/Schizomania/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637722280019029814
-    m_Hash: 4096745025
+      ticks: 637725643394598205
+    m_Hash: 2021666574
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

@@ -15,17 +15,41 @@ public class PlayerStates : MonoBehaviour
     }
 
     PlayerState myState;
+    private Animation anim;
 
     private void Start()
     {
-        myState = PlayerState.Idle;
+        anim = gameObject.GetComponent<Animation>();
 
+        myState = PlayerState.Idle;
         PlayerController = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!PlayerController.groundDetection());
+        // If statements, will try to fix this later.
+        // This is not as efficient as I would hope for, this is a WiP.
+        if (!PlayerController.groundDetection())
+        {
+            myState = PlayerState.Falling;
+            anim.Play("Falling");
+        }
+        if ( PlayerController.groundDetection())
+        {
+            myState = PlayerState.Idle;
+            anim.Play("Idle");
+        }
+        if (PlayerController.HorizontalMove < 0)
+        {
+            myState = PlayerState.walking;
+            anim.Play("walk");
+        }
+        if (PlayerController.HorizontalMove > 0)
+        {
+            myState = PlayerState.walking;
+            anim.Play("Walk"); //Mirror this, Mirror character?
+
+        }
     }
 }

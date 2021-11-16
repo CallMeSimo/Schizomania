@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded = false;
     private bool HoldingorUsing = false;
 
-    private float HorizontalMove, VerticalMove, DeathTimer = 0.0f;
-    private int playerDirection = 1;
+    public float HorizontalMove, VerticalMove, DeathTimer = 0.0f;
+    private int playerDirection = 1; // 1 = right; -1 = left;
     public float speed;
 
     public LayerMask playerLayerMask;
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
     {
         float raycastDistance1 = 0f;
 
-        Vector3 raycastOriginOffset1 = playerDirection == 1 ? new Vector2(1f, 0) : new Vector2(-1f, 0); //Will otherwise hit itself.
+        Vector3 raycastOriginOffset1 = playerDirection == 1 ? new Vector2(1f, 0) : new Vector2(-1f, 0); //Will otherwise hit itself, adds distance between player and raycast origin depending on direction.
         RaycastHit2D hit = Physics2D.Raycast(transform.position + raycastOriginOffset1, new Vector2(playerDirection, 0), raycastDistance1 /* , playerLayerMask // This should make the raycast ignore the player but it does not. */ );    // Cast a ray straight ? left : right.
 
         Debug.DrawRay(transform.position + raycastOriginOffset1, new Vector2(playerDirection, 0), Color.red, 1f); // Debugging purpouse.
