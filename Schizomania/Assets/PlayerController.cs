@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
 
     // InputHandler med OnTriggerEnter?
-    // Update högst upp (under start)
+    // Update hï¿½gst upp (under start)
     // 
 
     public TextMeshProUGUI myText;
@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask playerLayerMask;
 
+    public List<GameObject> inventory;
+
+    private GameObject doorObj;
+    private bool onDoor;
+
 
 
     // Start is called before the first frame update
@@ -34,18 +39,6 @@ public class PlayerController : MonoBehaviour
         rb2 = GetComponent<Rigidbody2D>();
         playerLayerMask = ~playerLayerMask;
 
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            Debug.Log("hit");
-            alive = false;
-            if (!alive)
-            {
-            }
-        }
     }
 
 
@@ -79,6 +72,18 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.DetachChildren();
             HoldingorUsing = false;
             return;
+        }
+
+        if (totalKeys > 0 && onDoor) {
+
+            if(Input.GetKeyDown(KeyCode.F)) {
+
+                totalKeys -= 1;
+                Destroy(doorObj);
+            }  
+        }
+        else if (totalKeys <= 0 && onDoor) {
+            Debug.Log("You need a key to open this door.");
         }
     }
 
@@ -149,5 +154,27 @@ public class PlayerController : MonoBehaviour
         pos = new Vector3(HorizontalMove * speed * Time.fixedDeltaTime, VerticalMove * speed * Time.fixedDeltaTime);
         rb2.position += pos;
 
+    }
+
+    int totalKeys = 0;
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Key")) {
+            totalKeys += 1;
+            Destroy(other.gameObject);
+        }
+
+        if(other.gameObject.CompareTag("Door")) {
+            doorObj = other.gameObject;
+            Debug.Log("Door");
+            onDoor = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.CompareTag("Door")){
+            Debug.Log("No door");
+            onDoor = false;
+        }
     }
 }
