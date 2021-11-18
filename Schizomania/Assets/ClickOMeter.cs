@@ -9,8 +9,10 @@ public class ClickOMeter : MonoBehaviour
     public float pullSpeed;
     public float markiplier;
     public GameObject start;
+    public AudioClip fresh;
     private float calculatedSpeed;
     private float lastSteps, timeBetweenSteps = 0.05f;
+    private bool hasPlayed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +40,14 @@ public class ClickOMeter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "End")
+        if (collision.gameObject.CompareTag("End"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (!hasPlayed)
+            {
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                AudioSource.PlayClipAtPoint(fresh, transform.position, 1);
+                hasPlayed = true;
+            }
         }
     }
 }
