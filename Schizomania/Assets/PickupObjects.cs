@@ -15,7 +15,7 @@ public class PickupObjects : MonoBehaviour
 
     private Component halo;
 
-    private bool startloop = false;
+    private bool insideCol = false;
 
 
     // Start is called before the first frame update
@@ -33,10 +33,10 @@ public class PickupObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (startloop) 
+            
+        if (insideCol)
         {
-        
+
             timer += Time.deltaTime;
             if (timer <= 0.5f)
             {
@@ -56,23 +56,25 @@ public class PickupObjects : MonoBehaviour
                 Debug.Log("3");
             }
 
-        }else if (!startloop)
-       {
-           halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
-            timer -= timer;
-       }
-       if(Input.GetKeyDown(KeyCode.F)){
-startloop=true;
-          }
-
-        else if(Input.GetKeyDown(KeyCode.E)){
-            startloop=false;
         }
-        
-        
-        }
-
     }
+
+    void OnTriggerEnter2D(Collider2D collision) 
+    {
+        if (collision.tag == "Player") {
+            insideCol = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision) {
+        if (collision.tag == "Player") {
+            
+            halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
+            insideCol = false;
+        }
+    }
+
+}
 
 
 
