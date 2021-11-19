@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 pos;
 
     private bool facingRight = true;
+    private static bool exists;
 
     private Animator anim;
 
@@ -20,12 +21,28 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+
+        if (!exists)
+        {
+            exists = true;
+            DontDestroyOnLoad(gameObject.transform);
+        } else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         moveHandler();
+    }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetFloat("pos x", transform.position.x);
+        PlayerPrefs.SetFloat("pos y", transform.position.y);
+        PlayerPrefs.SetFloat("pos z", transform.position.z);
     }
 
     // Update for physics
@@ -64,5 +81,17 @@ public class PlayerController : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    public void HidePlayerOnLoad()
+    {
+        gameObject.SetActive(false);
+        Debug.Log("Hide Player");
+    }
+
+    public void ShowPlayerOnLoad()
+    {
+        gameObject.SetActive(true);
+        Debug.Log("Show Player");
     }
 }
