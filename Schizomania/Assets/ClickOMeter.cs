@@ -11,6 +11,7 @@ public class ClickOMeter : MonoBehaviour
     public GameObject start;
     private float calculatedSpeed;
     private float lastSteps, timeBetweenSteps = 0.05f;
+    public int cellLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -32,15 +33,15 @@ public class ClickOMeter : MonoBehaviour
                 calculatedSpeed = speed - Vector2.Distance(start.transform.position, transform.position) * markiplier; // PEMDAS
             }
         }
-
-        Debug.Log(calculatedSpeed);
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "End")
+        if (collision.tag == "End")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(cellLevel);
+            // playerController.ShowPlayerOnLoad();
         }
     }
 }

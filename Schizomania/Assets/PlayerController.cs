@@ -20,12 +20,24 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+
+        if (PlayerPrefs.GetFloat("pos x") != null)
+        {
+            transform.position = new Vector3(PlayerPrefs.GetFloat("pos x"), PlayerPrefs.GetFloat("pos y"), PlayerPrefs.GetFloat("pos z"));
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         moveHandler();
+    }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetFloat("pos x", transform.position.x);
+        PlayerPrefs.SetFloat("pos y", transform.position.y);
+        PlayerPrefs.SetFloat("pos z", transform.position.z);
     }
 
     // Update for physics
@@ -64,5 +76,17 @@ public class PlayerController : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    public void HidePlayerOnLoad()
+    {
+        gameObject.SetActive(false);
+        Debug.Log("Hide Player");
+    }
+
+    public void ShowPlayerOnLoad()
+    {
+        gameObject.SetActive(true);
+        Debug.Log("Show Player");
     }
 }
