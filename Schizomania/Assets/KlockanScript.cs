@@ -54,7 +54,7 @@ public class KlockanScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && inCollider && !playerController.clockCompleted)
         {
-            SceneManager.LoadScene(level);
+            SceneToLoad.ChangeLevelToLoad(level);
             playerController.HidePlayerOnLoad();
         }
     }
