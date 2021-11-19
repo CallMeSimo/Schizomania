@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 pos;
 
     private bool facingRight = true;
+    private static bool exists;
 
     private Animator anim;
 
@@ -21,9 +22,13 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
 
-        if (PlayerPrefs.GetFloat("pos x") != null)
+        if (!exists)
         {
-            transform.position = new Vector3(PlayerPrefs.GetFloat("pos x"), PlayerPrefs.GetFloat("pos y"), PlayerPrefs.GetFloat("pos z"));
+            exists = true;
+            DontDestroyOnLoad(gameObject.transform);
+        } else
+        {
+            Destroy(gameObject);
         }
     }
 
