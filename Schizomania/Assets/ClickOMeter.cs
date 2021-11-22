@@ -49,7 +49,8 @@ public class ClickOMeter : MonoBehaviour
     {
         if (collision.tag == "End")
         {
-            SceneManager.LoadScene(cellLevel);
+            playerController.clockCompleted = true;
+            SceneToLoad.ChangeLevelToLoad(cellLevel);
             playerController.ShowPlayerOnLoad();
         }
     }

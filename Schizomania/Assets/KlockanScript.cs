@@ -3,45 +3,58 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour
+public class KlockanScript : MonoBehaviour
 {
-    public int Level;
+    public int level;
     private bool inCollider;
 
     private GameObject player;
     private PlayerController playerController;
 
+    private GameObject blink;
+    public bool canBlink;
+
     private void Start()
     {
+        blink = FindInActiveObjectByName("blink");
+        blink.SetActive(false);
         player = FindInActiveObjectByName("Player");
         playerController = player.GetComponent<PlayerController>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("True");
-            inCollider = true;
+            if (!playerController.clockCompleted && canBlink)
+            {
+                blink.SetActive(true);
+                inCollider = true;
+            } else
+            {
+                return;
+            }
         }
-        
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (playerController.clockCompleted)
         {
-            Debug.Log("False");
+            return;
+        }
+        else
+        {
+            blink.SetActive(false);
             inCollider = false;
         }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)&& inCollider)
+        if (Input.GetKeyDown(KeyCode.E) && inCollider && !playerController.clockCompleted)
         {
-            SceneManager.LoadScene(Level);
+            SceneToLoad.ChangeLevelToLoad(level);
             playerController.HidePlayerOnLoad();
         }
     }
