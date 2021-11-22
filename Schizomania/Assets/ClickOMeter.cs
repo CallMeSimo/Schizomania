@@ -16,6 +16,7 @@ public class ClickOMeter : MonoBehaviour
     private GameObject player;
     private PlayerController playerController;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,8 @@ public class ClickOMeter : MonoBehaviour
 
         player = FindInActiveObjectByName("Player");
         playerController = player.GetComponent<PlayerController>();
+  
+
     }
 
     // Update is called once per frame
@@ -40,6 +43,7 @@ public class ClickOMeter : MonoBehaviour
             }
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
