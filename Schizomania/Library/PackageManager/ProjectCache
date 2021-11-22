@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637731762401022617
+      ticks: 637731768203734737
     m_Hash: 2289783074
   m_LockFileStatus:
     m_FilePath: C:/Github/Schizomania/Schizomania/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637731762401026898
+      ticks: 637731768203744737
     m_Hash: 706023030
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

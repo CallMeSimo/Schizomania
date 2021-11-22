@@ -43,11 +43,12 @@ public class ClickOMeter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.tag == "End")
         {
-            playerController.clockCompleted = true;
             SceneToLoad.ChangeLevelToLoad(cellLevel);
             playerController.ShowPlayerOnLoad();
+            playerController.clockCompleted = true;
         }
     }
 
