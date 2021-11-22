@@ -17,8 +17,6 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
 
-    public bool clockCompleted = false;
-
     private void Start()
     {
         anim = GetComponent<Animator>();
