@@ -30,6 +30,7 @@ public class DoorScript : MonoBehaviour
         {
             spriteRenderer.color = new Color(0, 0, 0, 255);
             Debug.Log("Thanks for playing!");
+            Destroy(gameObject);
             SceneToLoad.ChangeLevelToLoad(2);
         }    
     }

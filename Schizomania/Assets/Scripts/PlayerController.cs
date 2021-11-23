@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,8 +20,10 @@ public class PlayerController : MonoBehaviour
 
     public bool clockCompleted = false;
 
+
     private void Start()
     {
+
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
 
@@ -28,7 +31,8 @@ public class PlayerController : MonoBehaviour
         {
             exists = true;
             DontDestroyOnLoad(gameObject.transform);
-        } else
+        }
+        else
         {
             Destroy(gameObject);
         }
@@ -65,8 +69,8 @@ public class PlayerController : MonoBehaviour
         if (!facingRight && horizontalMove > 0)
         {
             Flip();
-        } 
-        else if(facingRight && horizontalMove < 0)
+        }
+        else if (facingRight && horizontalMove < 0)
         {
             Flip();
         }
