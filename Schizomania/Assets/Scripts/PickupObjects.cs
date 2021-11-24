@@ -2,42 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PickupObjects : MonoBehaviour
 {
-    private float timer = 0f;
+    private bool inCollider;
 
-    private Component halo;
+    private GameObject player;
+    private PlayerController playerController;
 
-    private bool insideCol = false;
-    public bool fårBlinka = false;
+    private GameObject blink2;
+    private GameObject bultsax;
 
+    private bool pickUp = false;
+    
 
-    // Start is called before the first frame update
-
-    void Start()
+    private void Start()
     {
-        halo = GetComponent("Halo");
-        halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        if (fårBlinka)
-        {
-            Blinka();
-        }
+        blink2 = GameObject.FindGameObjectWithTag("Light");
+        bultsax = GameObject.FindGameObjectWithTag("Bultsax");
+     
+
+
+        blink2.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerController = player.GetComponent<PlayerController>();
+
+        ////Testar ändra itensiteten i lampan
+        //blink2.GetComponent<Light>().intensity = 3;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            insideCol = true;
-        }
-
-        if (collision.tag == "Player")
-        {
-            insideCol = true;
+            blink2.SetActive(true);
+            inCollider = true;
+            PickUp();
+  
         }
     }
 
@@ -45,33 +46,18 @@ public class PickupObjects : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
-            insideCol = false;
+            blink2.SetActive(false);
+            inCollider = false;
         }
     }
-    void Blinka()
+
+    void PickUp()
     {
-        if (insideCol)
+        if(Input.GetKeyDown(KeyCode.T))
         {
-            timer += Time.deltaTime;
-            if (timer <= 0.5f)
-            {
-                halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
-                Debug.Log(timer);
-            }
-
-            if (timer >= 1f)
-            {
-                halo.GetType().GetProperty("enabled").SetValue(halo, true, null);
-                Debug.Log("2");
-            }
-
-            if (timer >= 2f)
-            {
-                timer -= timer;
-                Debug.Log("3");
-            }
-
+            Debug.Log("Destroy");
+            pickUp = true;
+            Destroy(bultsax);
         }
     }
 
