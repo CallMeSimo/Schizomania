@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Schizomania/Assets/ReceptionistDetection.cs.meta
 guid: 01228fac5f7f95741ad100aee29b6513
+=======
+guid: ce7037e937557b745b442d77df1adf90
+>>>>>>> parent of e6b246fd (kontrollrum):Schizomania/Assets/Scripts/PickUp.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
