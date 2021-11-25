@@ -20,7 +20,7 @@ public class DoorScript : MonoBehaviour
         spriteRenderer = player.GetComponent<SpriteRenderer>();
 
         klocka = FindInActiveObjectByName("klocka");
-        klockanScript = klocka.GetComponent<KlockanScript>();
+        // klockanScript = klocka.GetComponent<KlockanScript>();
     }
 
     // Update is called once per frame

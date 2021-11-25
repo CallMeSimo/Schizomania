@@ -5,20 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneToLoad : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static void ChangeLevelToLoad(int sceneToLoad)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public static void ChangeLevelToLoad(int levelNumberToLoad)
-    {
-        SceneManager.LoadScene(levelNumberToLoad);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
