@@ -8,6 +8,9 @@ public class ElectricalMinigame : MonoBehaviour
     private GameObject blink1;
     private GameObject player;
     private PlayerController playerController;
+
+    private bool nearDoor = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,28 +29,33 @@ public class ElectricalMinigame : MonoBehaviour
                 blink1.SetActive(true);
                
             }
+            nearDoor = true;
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
+            nearDoor = false;
             blink1.SetActive(false);
         }
         else if (playerController.electricalCompleted)
         {
             blink1.SetActive(false);
         }
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !playerController.clockCompleted)
+        if (Input.GetKeyDown(KeyCode.E) && !playerController.electricalCompleted && nearDoor)
         {
             SceneToLoad.ChangeLevelToLoad(level);
             playerController.HidePlayerOnLoad();
+
         }
     }
 }

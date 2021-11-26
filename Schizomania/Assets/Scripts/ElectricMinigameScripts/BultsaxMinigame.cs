@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BultsaxMinigame : MonoBehaviour
 {
-
+    public int level;
     public float height = 10f;
     public float yCenter = 10f;
 
@@ -12,6 +12,14 @@ public class BultsaxMinigame : MonoBehaviour
     private GameObject yellowCable;
     private GameObject pinkCable;
     private GameObject blueCable;
+    [SerializeField] private GameObject player;
+    [SerializeField] private PlayerController playerController;
+    private GameObject lightScript;
+
+    private PinkCable pinkWire;
+    private BlueCable blueWire;
+    private YellowCable yellowWire;
+
 
     float startPosy;
 
@@ -25,6 +33,13 @@ public class BultsaxMinigame : MonoBehaviour
         yellowCable = GameObject.FindGameObjectWithTag("Yellow");
         pinkCable = GameObject.FindGameObjectWithTag("Pink");
         blueCable = GameObject.FindGameObjectWithTag("Blue");
+        player = FindInActiveObjectByName("Player");
+        playerController = player.GetComponent<PlayerController>();
+     
+
+        pinkWire = pinkCable.GetComponent<PinkCable>();
+        blueWire = blueCable.GetComponent<BlueCable>();
+        yellowWire = yellowCable.GetComponent<YellowCable>();
 
     }
 
@@ -58,8 +73,28 @@ public class BultsaxMinigame : MonoBehaviour
             
         }
 
-       
+        if(pinkWire.pink && blueWire.blue && yellowWire.yellow)
+        {
+            Debug.Log("Load");
+            SceneToLoad.ChangeLevelToLoad(level);
+            playerController.ShowPlayerOnLoad();
+            playerController.electricalCompleted = true;
+        }
     }
 
-
+    GameObject FindInActiveObjectByName(string name)
+    {
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++)
+        {
+            if (objs[i].hideFlags == HideFlags.None)
+            {
+                if (objs[i].name == name)
+                {
+                    return objs[i].gameObject;
+                }
+            }
+        }
+        return null;
+    }
 }

@@ -8,6 +8,8 @@ public class PinkCable : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
 
+    public bool pink = false;
+
     private GameObject bultsax;
     private GameObject light2;
     // Start is called before the first frame update
@@ -25,6 +27,7 @@ public class PinkCable : MonoBehaviour
         {
             spriteRenderer.sprite = newSprite;
             light2.SetActive(false);
+            pink = true;
         }
     }
 

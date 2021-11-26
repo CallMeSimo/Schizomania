@@ -9,6 +9,8 @@ public class ElectricalDoorScript : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private bool doorUnlocked = false;
 
+    public int level;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class ElectricalDoorScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && doorUnlocked)
         {
-            SceneToLoad.ChangeLevelToLoad(3);
+            SceneToLoad.ChangeLevelToLoad(level);
         }
     }
 

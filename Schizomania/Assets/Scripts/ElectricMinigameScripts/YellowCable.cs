@@ -10,6 +10,7 @@ public class YellowCable : MonoBehaviour
     private GameObject bultsax;
     private GameObject light1;
 
+    public bool yellow = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,7 @@ public class YellowCable : MonoBehaviour
         {
             spriteRenderer.sprite = newSprite;
             light1.SetActive(false);
+            yellow = true;
         }
     }
 }

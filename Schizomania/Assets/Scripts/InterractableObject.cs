@@ -6,22 +6,10 @@ using UnityEngine.SceneManagement;
 public class InterractableObject : MonoBehaviour
 {
     public GameObject lightSource;
-    private AudioSource pickupSound;
     private PlayerController playerController;
 
     private bool insideCol = false;
 
-    void Start()
-    {
-        if (gameObject.tag == "Pickup")
-        {
-            pickupSound = GetComponent<AudioSource>();
-        }
-        else
-        {
-            pickupSound = null;
-        }
-    }
 
     void Update()
     {
@@ -61,7 +49,6 @@ public class InterractableObject : MonoBehaviour
     {
         if (gameObject.tag == "Pickup")
         {
-            pickupSound.Play();
             playerController.AddItemToInventory(gameObject.name);
             Debug.Log("Bultsaxen har plockats upp");
             Destroy(gameObject);
