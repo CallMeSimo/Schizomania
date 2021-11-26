@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
 
     public bool clockCompleted = false;
-
+    public bool electricalCompleted = false;
 
     private void Start()
     {
