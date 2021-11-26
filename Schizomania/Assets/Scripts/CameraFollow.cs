@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    private GameObject player;
+    [SerializeField] private GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,6 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         //Change as desired, try finding a more efficent way of handeling this.
-        transform.position = new Vector3(player.transform.position.x, 0f, -10);
+        transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
     }
 }

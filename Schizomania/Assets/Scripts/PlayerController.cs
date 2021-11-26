@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public List<string> inventory = new List<string>();
+    public List<string> completedMinigames = new List<string>();
+
     private float horizontalMove;
     public float speed;
 
@@ -99,5 +102,27 @@ public class PlayerController : MonoBehaviour
     {
         gameObject.SetActive(true);
         Debug.Log("Show Player");
+    }
+
+    public void AddItemToInventory(string obj)
+    {
+        inventory.Add(obj);
+    }
+
+    public void AddCompletedMinigame(string game)
+    {
+        completedMinigames.Add(game);
+    }
+
+    public bool minigameCompleted(string game)
+    {
+        foreach (string name in completedMinigames)
+        {
+            if (name == game)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
