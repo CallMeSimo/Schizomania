@@ -21,12 +21,17 @@ public class Mazemove : MonoBehaviour
     {
         if (collision.gameObject.name == "SpeedBoost")
         {
-            speed = 2f;
+            speed = 6f;
         }
 
          if (collision.gameObject.name == "SpeedBoost2")
         {
-            speed = 10f;
+            speed = 13f;
+        }
+
+         if(collision.gameObject.name == "End")
+        {
+            SceneToLoad.ChangeLevelToLoad(2);
         }
     }
 }

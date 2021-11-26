@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
     }
 
     // Update is called once per frame
