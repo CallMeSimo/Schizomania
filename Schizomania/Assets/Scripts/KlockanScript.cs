@@ -5,18 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class KlockanScript : MonoBehaviour
 {
-    public int level;
+    public int level = 1;
     private bool inCollider;
 
     private GameObject player;
     private PlayerController playerController;
 
-    private GameObject blink;
+    public GameObject blink;
     public bool canBlink;
 
     private void Start()
     {
-        blink = FindInActiveObjectByName("blink");
         blink.SetActive(false);
         player = FindInActiveObjectByName("Player");
         playerController = player.GetComponent<PlayerController>();
