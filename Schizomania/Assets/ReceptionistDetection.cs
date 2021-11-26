@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ReceptionistDetection : MonoBehaviour
 {
-
     public bool lampaOn; 
     public GameObject Receptionist;
     // Start is called before the first frame update

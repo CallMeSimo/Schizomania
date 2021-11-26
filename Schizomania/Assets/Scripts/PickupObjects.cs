@@ -26,6 +26,7 @@ public class PickupObjects : MonoBehaviour
         {
             Blinka();
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)

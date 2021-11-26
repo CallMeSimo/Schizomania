@@ -20,7 +20,8 @@ public class Mazecollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player") 
         {
-            Debug.Log("du Träffa väggen");
+            PlayerHealth.health -= 1;
+            Debug.Log(PlayerHealth.health);
             SceneToLoad.ChangeLevelToLoad(4);
 
         }
