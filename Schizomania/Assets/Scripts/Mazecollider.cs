@@ -22,7 +22,7 @@ public class Mazecollider : MonoBehaviour
         {
             PlayerHealth.health -= 1;
             Debug.Log(PlayerHealth.health);
-            SceneToLoad.ChangeLevelToLoad(4);
+            SceneToLoad.ChangeLevelToLoad(6);
 
         }
 
