@@ -30,7 +30,7 @@ public class ClickOMeter : MonoBehaviour
     {
         transform.Translate(Vector2.right * pullSpeed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (Time.time - lastSteps > timeBetweenSteps)
             {
