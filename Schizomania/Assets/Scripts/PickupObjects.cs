@@ -35,11 +35,6 @@ public class PickupObjects : MonoBehaviour
         {
             insideCol = true;
         }
-
-        if (collision.tag == "Player")
-        {
-            insideCol = true;
-        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
