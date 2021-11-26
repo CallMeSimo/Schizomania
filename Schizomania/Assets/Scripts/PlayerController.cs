@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
         completedMinigames.Add(game);
     }
 
-    public bool minigameCompletedCheck(string game)
+    public bool minigameCompleted(string game)
     {
         foreach (string name in completedMinigames)
         {
@@ -123,5 +123,6 @@ public class PlayerController : MonoBehaviour
                 return true;
             }
         }
+        return false;
     }
 }
