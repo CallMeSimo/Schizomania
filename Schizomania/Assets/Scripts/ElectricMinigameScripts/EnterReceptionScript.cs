@@ -16,9 +16,9 @@ public class EnterReceptionScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger");
         if(collision.tag == "Player")
         {
+            Debug.Log("Trigger");
             onCollider = true;
         }
     }
